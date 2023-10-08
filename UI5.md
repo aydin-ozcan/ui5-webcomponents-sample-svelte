@@ -15,17 +15,17 @@ This lead to larger bundle sizes and slower performance.
 Svelte has much smaller bundle sizes (no library to load) and more efficient JavaScript code, making it more performant than other virtual DOM-based UI libraries . Also if you are not an expert React developer with lots of time on hand to optimize, your application probably rerenders many times unnecessarily.
 
 ## Wasn't the status quo with React?
-React is broken, and the entirety of its ecosystem is an attempt to repair it. Despite the suggestion of its name, it wasn't as reactive as one might assume, or perhaps it was reactive enough for just Facebook's use case. To develop a web application, a variety of additional functionalities are required. Developers began to address these issues, leading to the emergence of the extensive ecosystem we see today. It's estimated that there are over 20 state packages to choose from within the React ecosystem. In contrast, Svelte doesn't need a multitude of libraries to function effectively, as the existing tools already perform well.
+
+React is broken, and the entirety of its ecosystem is an attempt to repair it. Despite the suggestion of its name, it wasn't as reactive as one might assume, or perhaps it was reactive enough for just Facebook's use case. To develop a web application, a variety of additional functionalities are required. Developers began to address these issues, leading to the emergence of the extensive ecosystem we see today. It's estimated that there are over 20 state packages to choose from within the React ecosystem. In contrast, Svelte doesn't need a multitude of libraries to function effectively, as the existing tools coming with the library already perform well.
 And I've always questioned the need for a virtual DOM.
 
-Why did it become so popular? There must be something it excels at , and that's the power of 'components.' React's popularity soared, partly because many of us don't like Angular's rigid coding structure. Angular imposed a monolithic Spring Boot-like approach.
+But why did it become so popular? There must be something it excels at , and that's the power of 'components', React's popularity soared, partly because many of us don't like Angular's rigid coding structure. Angular imposed a monolithic Spring Boot-like approach.
 
 React offered a liberating component-based architecture, a breath of fresh air. Its syntax evolved positively, providing developers with a more intuitive experience. You might wonder, why not web components then ? Some argue it lacked standard browser support, needing polyfills at that time, or its API wasn't intuitive enough.
 Unfortunately, web components never gained the traction they deserved, which is a shame from my perspective.
 But computer history is a series of corrections for past mistakes, so I believe the time for web components will come eventually.
 
-Personal preferences always play a big role in these framework choices. For me, I  wasn't a fan of the Spring Boot-like approach and I wasn't a fan of dependency injection either. Patterns like MVC, MVVM, MVP are good but can become impractical or unnecessary in
-a small to midsize project where the customer is your product manager.
+Personal preferences always play a big role in these framework choices. For me, I  wasn't a fan of the Spring Boot-like approach for UI and I wasn't a fan of dependency injection either. Patterns like MVC, MVVM, MVP are good but can also become impractical or unnecessary in a small to midsize project where the customer is your product manager.
 A development team should have the freedom to choose. 'One size fits all' has never worked in software development.
 No development pattern should become bureaucracy.
 For ERP I prefer a domain-based structure with a functional approach, offering more agility and meaningful division based on the domain.
@@ -38,8 +38,7 @@ The UI5 next major version, Version 2, is on its way. So far, the only certainty
 
 Once again, things are changing. React has found ways to address some of its problems by advising people not to use React directly, but instead, integrate it with metaframeworks like Next.js. On the other hand, Svelte, Qwik, SolidJS, Vue, and htmx are gaining traction every day for the right reasons. And we are excitedly waiting for UI5 V2 to come!
 
-If you have time and explore something new and want to dive into Svelte, 
-
+If you have time to explore something new and want to dive into Svelte, 
 I've created a GitHub repository (https://github.com/aydin-ozcan/ui5-webcomponents-sample-svelte) with SAP standard TODO web component sample Svelte application. In this repository, I've made several modifications to incorporate the latest version of Svelte, Vite and other related packages.
 
 Additionally, there's a special souce to embed the Svelte TODO application within a UI5 application. This allows for seamless integration with on-premises launchpad or BTP Workzone, and you can use UI5 tooling for deployment.
