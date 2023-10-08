@@ -1,0 +1,84 @@
+{
+  "services": {
+    "LaunchPage": {
+      "adapter": {
+        "config": {
+          "catalogs": [
+            {
+              "id": "sample_catalog",
+              "title": "Sample Application Catalog",
+              "tiles": [
+                {
+                  "id": "app-id-0",
+                  "title": "",
+                  "size": "1x1",
+                  "tileType": "sap.ushell.ui.tile.StaticTile",
+                  "properties": {
+                    "chipId": "catalogTile_00",
+                    "title": "Svelte",
+                    "subtitle": "Svelte",
+                    "info": "Svelte",
+                    "icon": "sap-icon://decision",
+                    "targetURL": "#svelteui-display"
+                  }
+                }
+              ]
+            }
+          ],
+          "groups": [
+            {
+              "id": "sample_group",
+              "isGroupLocked": false,
+              "isPreset": true,
+              "isVisible": true,
+              "title": "Sample Applications",
+              "tiles": [
+                {
+                  "id": "app-id-0",
+                  "title": "",
+                  "size": "1x1",
+                  "tileType": "sap.ushell.ui.tile.StaticTile",
+                  "properties": {
+                    "chipId": "catalogTile_00",
+                    "title": "Svelte",
+                    "subtitle": "Svelte Todo",
+                    "info": "Svelte Todo",
+                    "icon": "sap-icon://decision",
+                    "targetURL": "#svelteui-display"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "NavTargetResolution": {
+      "config": {
+        "enableClientSideTargetResolution": true
+      }
+    },
+    "ClientSideTargetResolution": {
+      "adapter": {
+        "config": {
+          "inbounds": {
+            "svelteui-display": {
+              "semanticObject": "svelteui",
+              "action": "display",
+              "title": "Svelte UI5",
+              "signature": {
+                "parameters": {},
+                "additionalParameters": "notallowed"
+              },
+              "resolutionResult": {
+                "applicationType": "URL",
+                "additionalInformation": "SAPUI5.Component=sveltetodo",
+                "url": "./"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

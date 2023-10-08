@@ -1,0 +1,73 @@
+{
+	"_version": "1.12.0",
+
+	"sap.app": {
+		"id": "sveltetodo",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"title": "Svelte Todo",
+		"description": "Svelte Todo",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"crossNavigation": {
+      "inbounds": {
+        "intent1": {
+          "signature": {
+            "parameters": {},
+            "additionalParameters": "allowed"
+          },
+          "semanticObject": "svelteui",
+          "action": "display",
+          "title": "{{appTitle}}",
+          "subTitle": "{{appDescription}}",
+          "icon": "sap-icon://sales-document"
+        }
+      }
+    }
+	},
+
+	"sap.cloud": {
+    "service": "cf",
+    "public": true
+  },
+
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+
+	"sap.ui5": {
+		"dependencies": {
+			"minUI5Version": "1.118.1",
+			"libs": {
+				"sap.ui.core": {}
+			}
+		},
+    "resources": {
+      "js": [{ "uri": "sveltetodo.js" }],
+			"css": [{ "uri": "sveltestyle.css" }]
+    },
+		"handleValidation": true,
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "sveltetodo.i18n.i18n"
+				}
+			}
+		}
+	}
+}

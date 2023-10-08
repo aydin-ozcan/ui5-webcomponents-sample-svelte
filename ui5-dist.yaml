@@ -1,0 +1,14 @@
+specVersion: "2.6"
+metadata:
+  name: svelte
+type: application
+resources:
+  configuration:
+    paths:
+      webapp: dist
+framework:
+  name: SAPUI5
+  version: "1.118.1"
+  libraries:
+    - name: sap.ui.core
+

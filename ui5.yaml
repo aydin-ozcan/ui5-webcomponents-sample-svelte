@@ -1,0 +1,19 @@
+specVersion: "2.6"
+metadata:
+  name: svelte
+type: application
+framework:
+  name: SAPUI5
+  version: "1.118.1"
+  libraries:
+    - name: sap.ui.core
+
+server:
+  customMiddleware:
+  - name: ui5-middleware-livereload
+    afterMiddleware: compression
+    configuration:
+      debug: true
+      extraExts: "xml,json,properties"
+      port: 35729
+      path: "webapp"

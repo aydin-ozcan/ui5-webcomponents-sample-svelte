@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Svelte Todo</title>
+
+    <script>
+      window["sap-ushell-config"] = {
+        defaultRenderer: "fiori2",
+        renderers: {
+          fiori2: {
+            componentData: {
+              config: {
+                enableSearch: false,
+                enableUserDefaultParameters: true,
+                rootIntent: "Shell-home",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <script
+      id="sap-ushell-bootstrap"
+      src="https://sapui5.hana.ondemand.com/1.118.1/test-resources/sap/ushell/bootstrap/sandbox.js"
+    ></script>
+
+    <script
+      id="sap-ui-bootstrap"
+      src="https://sapui5.hana.ondemand.com/1.118.1/resources/sap-ui-core.js"
+      data-sap-ui-evt-oninit="main();"
+      data-sap-ui-libs="sap.m"
+      data-sap-ui-async="true"
+      data-sap-ui-theme="sap_fiori_3"
+      data-sap-ui-compatVersion="edge"
+    ></script>
+
+    <script type="text/javascript">
+      /**
+       * Main method to be executed once SAPUI5 has been initialized.
+       */
+      function main() {
+        "use strict";
+
+        // placing main content
+        sap.ushell.Container.createRenderer().placeAt("content");
+      }
+    </script>
+  </head>
+
+  <body class="sapUiBody" id="content"></body>
+</html>
