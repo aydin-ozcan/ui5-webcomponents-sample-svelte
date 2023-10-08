@@ -40,7 +40,7 @@ Once again, things are changing. React has found ways to address some of its pro
 
 If you have time and explore something new and want to dive into Svelte, 
 
-I've created a GitHub repository (GitHub repo XXX) featuring an SAP standard TODO web component sample Svelte application. In this repository, I've made several modifications to incorporate the latest version of Svelte and other related packages, along with Vite.
+I've created a GitHub repository (https://github.com/aydin-ozcan/ui5-webcomponents-sample-svelte) with SAP standard TODO web component sample Svelte application. In this repository, I've made several modifications to incorporate the latest version of Svelte, Vite and other related packages.
 
 Additionally, there's a special souce to embed the Svelte TODO application within a UI5 application. This allows for seamless integration with on-premises launchpad or BTP Workzone, and you can use UI5 tooling for deployment.
 

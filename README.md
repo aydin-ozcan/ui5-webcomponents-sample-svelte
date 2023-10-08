@@ -1,3 +1,14 @@
+
+
+This is SAP standard TODO web component sample Svelte application. In this repository, I've made several modifications to incorporate the latest version of Svelte, Vite and other related packages.
+
+Additionally, there's a special souce to embed the Svelte TODO application within a UI5 application. This allows for seamless integration with on-premises launchpad or BTP Workzone, and you can use UI5 tooling for deployment.
+
+
+
+
+## Orginal read me
+
 ![UI5-logo](docs/imgs/ui5-svelte-logo.png)
 
 [![CI](https://github.com/SAP-samples/ui5-webcomponents-sample-svelte/actions/workflows/ci.yaml/badge.svg)](https://github.com/SAP-samples/ui5-webcomponents-sample-svelte/actions/workflows/ci.yaml)
